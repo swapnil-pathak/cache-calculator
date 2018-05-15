@@ -9,7 +9,7 @@ Alternatively,
 Run 'make cache_calc' to build executable and then run './cache_calc' to run it. 
 Then, run 'python plot.py' to get graphical output.
 
-NOTE: For graphical output, python packages matplotlib and Tkinter need to be installed.
+## NOTE: For graphical output, python packages matplotlib and Tkinter need to be installed.
 They can be installed using the following commands.
 1. pip install matplotlib
 2. apt-get install python-tk
@@ -19,13 +19,9 @@ If the above packages are not present, graphical output cannot be seen.
 In case, graphical output is not needed, a file named 'calculation.dat' is generated which contains rows of plot points which are in format of "power of 2:Time"
 
 
-##################################################################################################
-NOTE: Running a simple 'make' will generate the executables and produce the output in the files mentioned before.
+## NOTE: Running a simple 'make' will generate the executables and produce the output in the files mentioned before.
 
-##################################################################################################
-##################################################################################################
-METHODOLOGY FOR CACHE CALCULATION
-##################################################################################################
+# METHODOLOGY FOR CACHE CALCULATION
 Assuming that the max cache size is 2 ^ 16 MB, a loop is set for making strides from 0 to 16.
 
 Each iteration consists of 16777216 (2 ^ 24) number of operations.
@@ -36,9 +32,7 @@ The entire operation is calculated in processor time.
 
 When the size of array ( N * Cache_size)) exceeds the next level cache size, the read and write performance will drop. A steep increase of Time should be observed in the generated graph.
 
-##################################################################################################
-DESCRIPTIONS OF GRAPHS
-##################################################################################################
+# DESCRIPTIONS OF GRAPHS
 ***Figure_1.png***
 
 The X axis is the power of 2, on a system where integer size is 4 bytes. The Y axis is the access time in microseconds.
