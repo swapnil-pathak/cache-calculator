@@ -31,10 +31,14 @@ int main() {
 
 int time_taken(int arr_size, int stride) {
   int j, current = 0, best = 0;
+
+  // Loop for making strides from 0 to 16
   for (j = 0; j < LOOP; j++) {
     
     int nbits = arr_size - 1;
     int x;	
+    
+    // Access each array element
     int *array = (int *)malloc(sizeof(int) * arr_size);
     clock_t start, diff;  
 
@@ -44,7 +48,7 @@ int time_taken(int arr_size, int stride) {
     start = clock();
 
     int y;
-
+    
     for (y = 0; y < RANDOM; y++) {
       ++array[(y * stride) & nbits];
     }

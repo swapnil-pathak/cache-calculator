@@ -1,6 +1,6 @@
-# cache-calculator
+# A simple cache estimator 
 
-Building and running:
+Building and running the program:
 1. Run 'make clean' to remove any precompiled packages
 2. Run 'make check-cache' to compile and run the program cache_calc.c 
 3. You can run a python script to get graphical output by typing 'python plot.py'
